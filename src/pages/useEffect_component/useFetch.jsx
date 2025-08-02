@@ -31,11 +31,11 @@ const useFetch = (url) => {
         } finally {
             setLoading(false);
         }
-    }, [url])
+    }, [])
 
     useEffect(() => {
         fetcher()
-    },[fetcher])
+    },[])
 
 
     return { loading, error, data }
