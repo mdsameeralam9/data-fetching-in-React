@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 
 const useFetch = (url) => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(false);
     const [data, setData] = useState([]);
 
-    const fetcher = async () => {
+    const fetcher = useCallback(async () => {
         if(!url) {
             setLoading(false)
             return
@@ -31,11 +31,11 @@ const useFetch = (url) => {
         } finally {
             setLoading(false);
         }
-    }
+    }, [url])
 
     useEffect(() => {
         fetcher()
-    },[])
+    },[fetcher])
 
 
     return { loading, error, data }
