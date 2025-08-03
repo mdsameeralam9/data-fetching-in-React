@@ -1,4 +1,4 @@
-const makeAPICall = async () => {
+export const makeAPICall = async () => {
     try {
         const response = await fetch('https://dummyjson.com/products');
         if (!response.ok) {
