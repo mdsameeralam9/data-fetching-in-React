@@ -7,10 +7,11 @@ import ErrorBoundry from './components/ErrorBoundry'
 import With_IIFE_Function from './pages/with_function'
 import Suspense_Component from './pages/suspense_component'
 import USE_API_Component from './pages/use_api_componet'
+import SWR_Component from './pages/swr_component'
+import React_Query from './pages/react_query_component'
 
 function App() {
   return (
-
     <BrowserRouter>
       <ErrorBoundry>
         <Header />
@@ -19,7 +20,8 @@ function App() {
           <Route path="/useeffect" element={<UseEffect_Component />} />
           <Route path="/suspense" element={<Suspense_Component />} />
           <Route path="/useapi" element={<USE_API_Component />} />
-
+          <Route path="/swr" element={<SWR_Component />} />
+          <Route path="/usequery" element={<React_Query />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </ErrorBoundry>
