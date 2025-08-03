@@ -1,6 +1,6 @@
 import React from "react";
 
-const CardSkeleton = () => {
+const ProductListSkeleton = () => {
     const skeletonCards = Array.from({ length: 10 });
 
     return (
@@ -16,4 +16,4 @@ const CardSkeleton = () => {
     );
 };
 
-export default CardSkeleton;
+export default ProductListSkeleton;
