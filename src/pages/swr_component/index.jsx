@@ -1,4 +1,3 @@
-import React from 'react'
 import useSWR from 'swr';
 import ProductList from '../../components/ProductList'
 import { makeAPICall } from '../suspense_component/util';

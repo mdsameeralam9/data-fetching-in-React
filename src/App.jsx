@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import UseEffect_Component from './pages/useEffect_component'
 import Header from './components/Header'

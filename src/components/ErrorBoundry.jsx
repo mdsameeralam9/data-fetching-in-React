@@ -1,6 +1,5 @@
-import React, { Fragment } from "react";
+import { Fragment } from "react";
 import { Link } from "react-router-dom";
-//import { Link } from "react-router-dom";
 
 class ErrorBoundary extends React.Component {
     constructor(props) {

@@ -1,5 +1,3 @@
-import React from "react";
-
 const ProductListSkeleton = () => {
     const skeletonCards = Array.from({ length: 10 });
 
