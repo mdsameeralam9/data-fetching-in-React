@@ -6,7 +6,7 @@ const UseEffect_Component = () => {
     const { loading, error, data } = useFetch('https://dummyjson.com/products');
     return (
         <div>
-            <ProductList loading={loading} error={error} data={data} />
+            <ProductList loading={loading} error={error} data={data} callFrom={"useEffect"}/>
         </div>
     )
 }

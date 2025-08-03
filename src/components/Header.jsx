@@ -6,7 +6,8 @@ const Header = () => {
         <header>
             <h2>Data Fetching with</h2>
             <nav>
-                <Link to="/">UseEffect</Link>
+                <Link to="/">IIFE Function</Link>
+                <Link to="/useeffect">UseEffect</Link>
                 <Link to="/suspense">Suspense</Link>
                 <Link to="/useapi">Use API</Link>
                 <Link to="/swr">swr</Link>
