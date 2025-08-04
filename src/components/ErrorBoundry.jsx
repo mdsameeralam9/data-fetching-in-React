@@ -1,7 +1,7 @@
-import { Fragment } from "react";
+import { Fragment , Component} from "react";
 import { Link } from "react-router-dom";
 
-class ErrorBoundary extends React.Component {
+class ErrorBoundary extends Component {
     constructor(props) {
         super(props);
         this.state = {
